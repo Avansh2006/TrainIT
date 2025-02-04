@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
   </head>
   <body>
 
@@ -180,33 +180,33 @@
       <div class="container">
         <div class="row">
           <!-- Counter Item -->
-          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
+          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center res">
             <div class="counter wow fadeInRight" data-wow-delay="0.3s">
-              <div class="icon"><img src="./assets/img/Group.png" alt=""></div>
+              <div class="icon"><img src="./assets/img/Group.png" alt="" class="77px"></div>
               <p>ARMY INSTITUTE OF TECHNOLOGY</p>
               <span>PUNE, MAHARASHTRA</span>
             </div>
           </div>
           <!-- Counter Item -->
-          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
+          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center res">
             <div class="counter wow fadeInRight" data-wow-delay="0.6s">
-              <div class="icon"><img src="./assets/img/Group (1).png" alt=""></div>
+              <div class="icon"><img src="./assets/img/Group (1).png" alt="" class="77px"></div>
               <p>SUBMISSION DEADLINE</p>
               <span>23RD MARCH 2025</span>
             </div>
           </div>
           <!-- Counter Item -->
-          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
+          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center res">
             <div class="counter wow fadeInRight" data-wow-delay="0.9s">
-              <div class="icon"><img src="./assets/img/objects.png" alt=""></div>
+              <div class="icon"><img src="./assets/img/objects.png" alt="" class="77px"></div>
               <p>MODE OF EVENT</p>       
               <span>ONLINE</span>
             </div>
           </div>
           <!-- Counter Item -->
-          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
+          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center res">
             <div class="counter wow fadeInRight" data-wow-delay="1.2s">
-              <div class="icon"><img src="./assets/img/Group (2).png" alt=""></div>
+              <div class="icon"><img src="./assets/img/Group (2).png" alt="" class="77px"></div>
               <p>PRIZE POOL</p>
               <span>1 LAKH+</span>
             </div>
@@ -234,7 +234,7 @@
           <div class="carousel-caption d-md-block regblock">
               
             <a href="#" class="fadeInLeft wow btn btn-common btn-lg regbtn" data-wow-delay=".6s">DOWNLOAD BROCHURE</a>
-            <a href="#" class="fadeInLeft wow btn btn-common btn-lg regbtn" data-wow-delay=".6s">BECOME A SPONSOR</a>
+            <btn class="fadeInLeft wow btn btn-common btn-lg regbtn" data-wow-delay=".6s" onclick="sendSponsorshipEmail()">BECOME A SPONSOR</btn>
           </div>
           
         </div>
@@ -246,7 +246,7 @@
           <div class="col-12">
             <div class="section-title-header text-center">
               <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Ask Question?</h1>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Global Grand Event on Digital Design</p>
+              <p class="wow fadeInDown" data-wow-delay="0.2s"></p>
             </div>
           </div>
         </div>
@@ -256,7 +256,7 @@
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <div class="header-title" data-toggle="collapse" data-target="#questionOne" aria-expanded="true" aria-controls="collapseOne">
-                    <i class="lni-pencil"></i> How to make a new event?
+                    <i class="lni-pencil"></i>  Who is eligible to participate in the TRAINIT Hackathon?
                   </div>
                 </div>
                 <div id="questionOne" class="collapse" aria-labelledby="headingOne" data-parent="#question">
@@ -268,7 +268,7 @@
               <div class="card">
                 <div class="card-header" id="headingTwo">
                     <div class="header-title" data-toggle="collapse" data-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
-                      <i class="lni-pencil"></i>  Which payment methods do you accept? 
+                      <i class="lni-pencil"></i>  Will there be any mentors available during the hackathon?
                     </div>
                 </div>
                 <div id="questionTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
@@ -280,7 +280,7 @@
               <div class="card">
                 <div class="card-header" id="headingThree">
                   <div class="header-title" data-toggle="collapse" data-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
-                    <i class="lni-pencil"></i>  Which document can i bring to meeting?   
+                    <i class="lni-pencil"></i> Will there be prizes for the winners of the hackathon?
                   </div>
                 </div>
                 <div id="questionThree" class="collapse" aria-labelledby="headingThree" data-parent="#question">
@@ -290,16 +290,8 @@
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingThree">
-                  <div class="header-title" data-toggle="collapse" data-target="#questionFour" aria-expanded="false" aria-controls="questionFour">
-                   <i class="lni-pencil"></i> Who can join at the live event venue?
-                  </div>
-                </div>
-                <div id="questionFour" class="collapse" aria-labelledby="headingThree" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
+                
+                
               </div>
             </div>
           </div>
@@ -308,14 +300,10 @@
               <div class="card">
                 <div class="card-header" id="headingOne2">
                   <div class="header-title" data-toggle="collapse" data-target="#questionOne2" aria-expanded="true" aria-controls="collapseOne">
-                    <i class="lni-pencil"></i> How to make a new event?
+                    <i class="lni-pencil"></i>  How can we register for the TRAINIT Hackathon?
                   </div>
                 </div>
-                <div id="questionOne2" class="collapse" aria-labelledby="headingOne" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
+                
               </div>
               <div class="card">
                 <div class="card-header" id="headingTwo2">
@@ -332,7 +320,7 @@
               <div class="card">
                 <div class="card-header" id="headingThree">
                   <div class="header-title" data-toggle="collapse" data-target="#questionFive" aria-expanded="false" aria-controls="questionFive">
-                    <i class="lni-pencil"></i>How to set price? 
+                    <i class="lni-pencil"></i>  Will there be any mentors available during the hackathon?
                   </div>
                 </div>
                 <div id="questionFive" class="collapse" aria-labelledby="headingThree" data-parent="#question">
@@ -341,16 +329,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <div class="header-title" data-toggle="collapse" data-target="#questionSix" aria-expanded="false" aria-controls="questionSix">
-                    <i class="lni-pencil"></i>  What our price list? 
-                  </div>
-                </div>
-                <div id="questionSix" class="collapse" aria-labelledby="headingThree" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
+             
                 </div>
               </div>
             </div>
@@ -378,45 +357,27 @@
     <footer class="footer-area section-padding">
       <div class="container">
         <div class="row">
+          
           <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
-            <h3><img src="assets/img/logo.png" alt=""></h3>
-            <p>
-              Aorem ipsum dolor sit amet elit sed lum tempor incididunt ut labore el dolore alg minim veniam quis nostrud ncididunt.
+            <h3><img src="assets/img/logo.png" alt="" id="flogo" ></h3>
+            <p class="fpara">
+              A national-level hackathon focused on innovative ideas and projects in Machine Learning, AI, and Data Science. A national-level hackathon focused on innovative ideas and projects in Machine Learning, AI, and Data Science.
             </p>
           </div>
           <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
             <h3>QUICK LINKS</h3>
             <ul>
-              <li><a href="#">About Conference</a></li>
-        
-              <li><a href="#">Event Shedule</a></li>
+              <li><a href="#">Event Rulebook</a></li>
+              <li><a href="#">Sponsors Brochure</a></li>
+              <li><a href="#"> FAQ</a></li>
+              <li><a href="#">About Solutions 2k25</a></li>
+              <li><a href="#">About AIT Pune</a></li>
+          
           
           
             </ul>
           </div>
-          <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
-            <h3>RECENT POSTS</h3>
-            <ul class="image-list">
-              <li>
-                <figure class="overlay">
-                  <img class="img-fluid" src="assets/img/art/a1.jpg" alt="">
-                </figure>
-                <div class="post-content">
-                  <h6 class="post-title"> <a href="blog-single.html">Lorem ipsm dolor sumit.</a> </h6>
-                  <div class="meta"><span class="date">October 12, 2018</span></div>
-                </div>
-              </li>
-              <li>
-                <figure class="overlay">
-                  <img class="img-fluid" src="assets/img/art/a2.jpg" alt="">
-                </figure>
-                <div class="post-content">
-                  <h6 class="post-title"><a href="blog-single.html">Lorem ipsm dolor sumit.</a></h6>
-                  <div class="meta"><span class="date">October 12, 2018</span></div>
-                </div>
-              </li>
-            </ul>
-          </div>
+          
           <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.8s">
             <h3>SUBSCRIBE US</h3>
             <div class="widget">
@@ -441,6 +402,17 @@
               </ul>
             </div>
           </div>
+          <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
+            <model-viewer 
+      src="./assets/squid_game__pinksoldier_triangle.glb" 
+      alt="A 3D model of something" 
+      auto-rotate 
+      camera-controls 
+      environment-image="neutral" 
+      ar
+      shadow-intensity="1"
+      style="width: 100%; height: 500px;">
+    </model-viewer> </div>
         </div>
       </div>
     </footer>

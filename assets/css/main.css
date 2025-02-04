@@ -2392,7 +2392,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 #main-slide .carousel-caption .btn {
-  margin: 509px 0px 0px 0px;
+  margin: 51vh 0px 0px 0px;
   width: 189px;
   transform: translate(-50%,-50%);
 }
@@ -2412,3 +2412,102 @@ a.back-to-top:hover, a.back-to-top:focus {
 .carousel-caption.d-md-block.regblock {
   transform: translate(-15%, 17%);
 }
+img#flogo {
+  transform: translate(-139px, -16px);
+}
+
+.col-md-6.col-lg-3.col-sm-6.col-xs-12.wow.fadeInUp {
+  align-self: baseline;
+}
+
+p.fpara {
+  transform: translate(0px, -20px);
+}
+
+@media (min-width: 1440px) and (max-width: 1838px) { 
+  #main-slide .carousel-caption .btn {
+   
+    width: 189px;
+    transform: translate(-50%, -101%);
+}
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) { 
+  #main-slide .carousel-caption .btn {
+   
+    width: 189px;
+    transform: translate(-50%, -50%);
+}
+}
+@media (min-width: 769px) and (max-width: 1024px) { 
+  #main-slide .carousel-caption .btn {
+    
+    width: 189px;
+    transform: translate(-50%, -50%);
+
+}
+.accordion .header-title {
+        font-size: 10px;
+    }
+
+ }
+
+ 
+@media (min-width: 768px) and (max-width: 991px) {
+    .accordion .header-title {
+        font-size: 10px;
+    }
+    img.\37 7px {
+      width: 77px;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-6.col-lg-3.col-xs-12.work-counter-widget.text-center.res{
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 25%;
+      max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) { 
+  a.fadeInLeft.wow.btn.btn-common.btn-lg.regbtn {
+    width: -1px;
+    height: 46px;
+}
+#main-slide .carousel-caption .btn {
+ 
+  width: 189px;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  #main-slide .carousel-caption .btn {
+    
+      width: 189px;
+      transform: translate(-2%, -118%);
+  }
+}
+}
+
+@media (max-width: 768px) {
+  @media (max-width: 768px) {
+      #main-slide .carousel-caption .btn {
+         
+          width: 189px;
+          transform: translate(-2%, -118%);
+      }
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1840px) {
+  
+    #main-slide .carousel-caption .btn {
+      
+      width: 189px;
+      transform: translate(-50%, -50%);
+  }
+   
+
+}
+

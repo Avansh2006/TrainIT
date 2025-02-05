@@ -22,9 +22,15 @@
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
   </head>
   <body>
-
+    <div id="loader">
+      <img src="./assets/img/logo.png" alt="Loading...">
+      
+  </div>
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
       <!-- Navbar Start -->
@@ -48,8 +54,8 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">
-                  About
+                <a class="nav-link" href="#tracks">
+                  Tracks
                 </a>
               </li>
               <li class="nav-item">
@@ -84,7 +90,7 @@
             <a class="page-scrool" href="#header-wrap">Home</a>
           </li>
           <li>
-            <a class="page-scrool" href="#about">About</a>
+            <a class="page-scrool" href="#tracks">Tracks</a>
           </li>
           <li>
              <a class="page-scroll" href="#schedules">schedules</a>
@@ -150,7 +156,7 @@
 
     <div class="carousel-inner" id="canvas3d">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="assets/img/page3.png" alt="First slide">
+        <img class="d-block w-100" src="assets/img/page3.png" alt="First slide" id="tracks">
         <!-- <div class="carousel-caption d-md-block">
           <p class="fadeInUp wow" data-wow-delay=".6s">Global Grand Event on Digital Design</p>
           <h1 class="wow fadeInDown heading" data-wow-delay=".4s">Design Thinking Conference</h1>
@@ -161,7 +167,7 @@
       </div>
       <div class="carousel-inner" id="canvas3d">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="assets/img/page 4.png" alt="First slide">
+          <img class="d-block w-100" src="assets/img/page 4.png" alt="First slide" id="schedules">
           <!-- <div class="carousel-caption d-md-block">
             <p class="fadeInUp wow" data-wow-delay=".6s">Global Grand Event on Digital Design</p>
             <h1 class="wow fadeInDown heading" data-wow-delay=".4s">Design Thinking Conference</h1>
@@ -219,7 +225,7 @@
 
     <div class="carousel-inner" id="canvas3d">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="assets/img/page 6.png" alt="First slide">
+        <img class="d-block w-100 s1" src="assets/img/page 6.png" alt="First slide" id="sponsors">
         <!-- <div class="carousel-caption d-md-block">
           <p class="fadeInUp wow" data-wow-delay=".6s">Global Grand Event on Digital Design</p>
           <h1 class="wow fadeInDown heading" data-wow-delay=".4s">Design Thinking Conference</h1>
@@ -230,7 +236,7 @@
       </div>
       <div class="carousel-inner" id="canvas3d">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="assets/img/page 7.png" alt="First slide">
+          <img class="d-block w-100 s2" src="assets/img/page 7.png" alt="First slide" >
           <div class="carousel-caption d-md-block regblock">
               
             <a href="#" class="fadeInLeft wow btn btn-common btn-lg regbtn" data-wow-delay=".6s">DOWNLOAD BROCHURE</a>

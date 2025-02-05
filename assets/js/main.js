@@ -81,3 +81,59 @@
   });      
 
 }(jQuery));
+
+
+window.addEventListener("load", function() {
+  setTimeout(() => {
+      document.getElementById("loader").style.display = "none";
+  }, 5000);
+});
+
+gsap.to("#loader img", {
+  top: -369,
+  left: -621,
+  opacity: 1,   
+  duration: 4,
+  ease: "power2.out",
+  delay: 1 // Start animation after 1 second
+})
+
+gsap.to("#loader", {
+  
+  opacity: 0,   
+  duration: 5,
+  ease: "power2.out",
+ delay:1.5
+})
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".s1", {
+  x: "100vw",  // Start completely off-screen (right)
+  opacity: 0,  // Start hidden
+  duration: 1.5,
+  ease: "power2.out",
+  scrollTrigger: {
+      trigger: ".s1",   // Element that triggers animation
+      start: "top 87%", // Start when image enters viewport
+      end: "top 50%",   // End at 50% of viewport
+      scrub: true,     // No smooth scroll effect
+      markers: false     // Shows start/end markers (for debugging)
+    
+  }
+});
+
+gsap.from(".s2", {
+  x: "-100vw",  // Start completely off-screen (right)
+  opacity: 0,  // Start hidden
+  duration: 1.5,
+  ease: "power2.out",
+  scrollTrigger: {
+      trigger: ".s2",   // Element that triggers animation
+      start: "top 87%", // Start when image enters viewport
+      end: "top 50%",   // End at 50% of viewport
+      scrub: true,     // No smooth scroll effect
+      markers: false     // Shows start/end markers (for debugging)
+    
+  }
+});

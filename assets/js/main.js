@@ -92,8 +92,8 @@ window.addEventListener("load", function() {
 gsap.to("#loader img", {
   top: -369,
   left: -621,
-  opacity: 1,   
-  duration: 4,
+  opacity: 0,   
+  duration: 1.5,
   ease: "power2.out",
   delay: 1 // Start animation after 1 second
 })

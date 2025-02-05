@@ -89,22 +89,22 @@ window.addEventListener("load", function() {
   }, 5000);
 });
 
-gsap.to("#loader img", {
-  top: -369,
-  left: -621,
-  opacity: 0,   
-  duration: 1.5,
-  ease: "power2.out",
-  delay: 1 // Start animation after 1 second
-})
+// gsap.to("#loader img", {
+//   top: -369,
+//   left: -621,
+//   opacity: 0,   
+//   duration: 1.5,
+//   ease: "power2.out",
+//   delay: 1 // Start animation after 1 second
+// })
 
-gsap.to("#loader", {
+// gsap.to("#loader", {
   
-  opacity: 0,   
-  duration: 5,
-  ease: "power2.out",
- delay:1.5
-})
+//   opacity: 0,   
+//   duration: 5,
+//   ease: "power2.out",
+//  delay:1.5
+// })
 
 gsap.registerPlugin(ScrollTrigger);
 
